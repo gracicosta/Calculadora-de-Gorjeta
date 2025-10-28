@@ -29,7 +29,7 @@ function conta() {
 }
 
 function reset() {
-    document.getElementById('dividirPorPessoa').value = ''
+    document.getElementById('dividirPorPessoa').value = '1'
     document.getElementById('contaTotal').value = ''
     document.getElementById('totalConta').textContent = `R$ 0.00`
     document.getElementById('faturarCada').textContent = `R$ 0.00`

@@ -47,13 +47,13 @@ h1 {
 
 section.conteudo {
     display: flex;
-    height: 45%;
+    height: 40%;
     width: 50%;
     background-color: var(--bg-section-conteudo);
     font-family: var(--font-roboto);
     font-size: 1.05rem;
     border-radius: var(--border-radius);
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 2rem;
 }
 
@@ -64,7 +64,7 @@ section.conteudo > * {
 section.conta {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
     color: var(--font-color-gray);
 }
