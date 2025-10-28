@@ -145,6 +145,7 @@ button {
     font-size: var(--font-roboto);
     font-weight: 400;
     transition: transform .10s ease;
+    cursor: pointer;
 }
 
 button:focus {
