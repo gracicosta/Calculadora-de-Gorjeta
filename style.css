@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-inter: 'Inter', sans-serif;
+    --font-roboto: 'Roboto Slab', serif;
+    --bg: #FAF3E0;
+    --bg-section-conteudo: #FFFFFF;
+    --border-radius: 20px;
+    --bg-section: #284B63;
+    --bg-input: #F9FAFB;
+    --color2: #3C6E71;
+    --color3: #353535;
+    --font-color-white: #E5E7EB;
+    --font-color-gray: #1F2937;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1 {
+    font-family: var(--font-inter);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+section.conteudo {
+    display: flex;
+    height: 45%;
+    width: 50%;
+    background-color: var(--bg-section-conteudo);
+    font-family: var(--font-roboto);
+    font-size: 1.05rem;
+    border-radius: var(--border-radius);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+section.conteudo > * {
+    flex: 1;
+}
+
+section.conta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: var(--font-color-gray);
+}
+
+section.dividir {
+    background-color: var(--bg-section);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    color: var(--font-color-white);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    height: 2rem;
+    text-align: end;
+    padding-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--font-color-gray);
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.style-img {
+    display: flex;
+    background-color: var(--bg-input);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #D1D5DB;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+img {
+    height: 2rem;
+    width: 1.3rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 1.25rem;
+    background: transparent;
+    accent-color: var(--bg-section);
+}
+
+button {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #d1d5db1f;
+    background-color: var(--bg-input);
+    border: none;
+    height: 2rem;
+    font-size: var(--font-roboto);
+    font-weight: 400;
+    transition: transform .10s ease;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+button:active {
+    transform: translateY(1px) scale(0.99);
+}
+
+@media (max-width: 1200px) {
+
+    main {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    section.conteudo {
+        height: 50%;
+        font-size: 0.9rem;
+    }
+
+    section.dividir {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    main {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    section.conteudo {
+        flex-direction: column;
+        height: 53%;
+        font-size: 0.9rem;
+    }
+
+    section.dividir {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    section.conteudo {
+        flex-direction: column;
+        height: 80%;
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    main {
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    section.conteudo {
+        flex-direction: column;
+        height: 80%;
+        width: 70%;
+        font-size: 0.8rem;
+        padding: 1.5rem;
+    }
+
+    section.dividir {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gracielle Costa">
+    <meta name="description" content="Uma calculadora de gorjeta desenvolvida para resturantes e outros serviços."> 
+    <title>Calculadora de Gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main oninput="conta()">
+        <h1>Calculadora <br> de <br> Gorjeta</h1>
+
+        <section class="conteudo">
+
+            <!-- Campo: Conta Total -->
+            <section class="conta">
+
+                <fieldset class="space">
+                    <label for="contaTotal">Conta</label>
+                    <div class="style-img">
+                        <img src="image/money-icon.svg" alt="money">
+                        <input type="number" name="conta" id="contaTotal" class="display" placeholder="R$ 0.00">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="space-between">
+                        <label for="gorjeta">Gorjeta %</label>
+                        <span id="gorjetaPorcentagem">0%</span>
+                    </div>
+                    <input type="range" name="gorjeta" id="gorjeta" min="0" max="100" step="1" value="0" class="inp">
+                </fieldset>
+
+                <fieldset>
+                    <div class="space-between">
+                        <label for="dividirPorPessoa">Dividir entre</label>
+                    </div>
+                    <div class="style-img">
+                        <img src="image/person-icon.svg" alt="person">
+                        <input type="number" name="dividir" id="dividirPorPessoa" min="1" max="20" step="1" value="1">
+                    </div>
+                </fieldset>
+            </section>
+
+
+            <!-- Campo: Conta dividida por pessoas -->
+
+            <section class="dividir">
+
+                <div class="space-between">
+                    <p>Valor total</p>
+                    <span id="totalConta">R$ 0.00</span>
+                </div>
+
+                <div class="space-between">
+                    <p>Valor por pessoa</p>
+                    <span id="faturarCada">R$ 0.00</span>
+                </div>
+
+                <button type="reset" id="buttonReset" class="buttonReset" onclick="reset()">Apagar</button>
+            </section>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
