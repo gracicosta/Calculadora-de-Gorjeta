@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
                     <label for="contaTotal">Conta</label>
                     <div class="style-img">
                         <img src="image/money-icon.svg" alt="money">
-                        <input type="number" name="conta" id="contaTotal" class="display" placeholder="R$ 0.00">
+                        <input type="number" name="conta" id="contaTotal" placeholder="R$ 0.00">
                     </div>
                 </fieldset>
 
@@ -31,7 +31,7 @@
                         <label for="gorjeta">Gorjeta %</label>
                         <span id="gorjetaPorcentagem">0%</span>
                     </div>
-                    <input type="range" name="gorjeta" id="gorjeta" min="0" max="100" step="1" value="0" class="inp">
+                    <input type="range" name="gorjeta" id="gorjeta" min="0" max="100" step="1" value="0">
                 </fieldset>
 
                 <fieldset>
@@ -60,7 +60,7 @@
                     <span id="faturarCada">R$ 0.00</span>
                 </div>
 
-                <button type="reset" id="buttonReset" class="buttonReset" onclick="reset()">Apagar</button>
+                <button type="reset" class="buttonReset" onclick="apagar()">Apagar</button>
             </section>
         </section>
     </main>

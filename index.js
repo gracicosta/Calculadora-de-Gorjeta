@@ -1,11 +1,3 @@
-function trocaNome(valor) {
-    if (valor == 1) {
-        return valor + " pessoa";
-    } else {
-        return valor + " pessoas";
-    }
-}
-
 function conta() {
 
     // Variaveis
@@ -25,10 +17,9 @@ function conta() {
     document.getElementById('gorjetaPorcentagem').textContent = `${gorjeta}%`
     document.getElementById('totalConta').textContent = `R$ ${total.toFixed(2)}`
     document.getElementById('faturarCada').textContent = `R$ ${valorArredondado.toFixed(2)}`
-    document.getElementById('qtdPessoas').textContent = `${trocaNome(pessoas)}`
 }
 
-function reset() {
+function apagar() {
     document.getElementById('dividirPorPessoa').value = '1'
     document.getElementById('contaTotal').value = ''
     document.getElementById('totalConta').textContent = `R$ 0.00`

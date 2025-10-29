@@ -48,7 +48,7 @@ h1 {
 section.conteudo {
     display: flex;
     height: 40%;
-    width: 50%;
+    width: 45%;
     background-color: var(--bg-section-conteudo);
     font-family: var(--font-roboto);
     font-size: 1.05rem;
@@ -142,7 +142,8 @@ button {
     background-color: var(--bg-input);
     border: none;
     height: 2rem;
-    font-size: var(--font-roboto);
+    font-size: 1rem;
+    font-family: var(--font-roboto);
     font-weight: 400;
     transition: transform .10s ease;
     cursor: pointer;
@@ -170,7 +171,7 @@ button:active {
     }
 
     section.conteudo {
-        height: 50%;
+        height: 40%;
         font-size: 0.9rem;
     }
 
@@ -179,7 +180,7 @@ button:active {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
     main {
         gap: 1rem;
@@ -230,7 +231,7 @@ button:active {
         justify-content: flex-start;
         align-items: center;
         padding-top: 3rem;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     h1 {
@@ -239,13 +240,19 @@ button:active {
 
     section.conteudo {
         flex-direction: column;
-        height: 80%;
+        height: 70%;
         width: 70%;
         font-size: 0.8rem;
-        padding: 1.5rem;
+        padding: 1.3rem;
     }
 
     section.dividir {
         padding: 1rem;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    button {
+        font-size: 0.8rem;
     }
 }
